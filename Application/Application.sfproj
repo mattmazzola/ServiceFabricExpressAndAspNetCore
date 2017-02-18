@@ -26,6 +26,11 @@
     <None Include="Scripts\Deploy-FabricApplication.ps1" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\expressservice\**\*.*">
+      <Link>ApplicationPackageRoot\ExpressPkg\Code\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="ApplicationPackageRoot\ExpressPkg\Config\Settings.xml" />
+    <Content Include="ApplicationPackageRoot\ExpressPkg\ServiceManifest.xml" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

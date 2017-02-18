@@ -1,0 +1,21 @@
+{
+  "name": "expressservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/sever.js",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Mazzola",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.35",
+    "typescript": "^2.1.6"
+  }
+}
